@@ -1,0 +1,21 @@
+model:
+  properties:
+    metadata:
+      properties:  # to add yout own properties, remove this line and uncomment the next one
+        title:
+          type: fulltext
+        file:
+          properties:
+           id:
+             type: keyword
+  use:
+    - invenio
+  package: model_document
+  schema-server: 'local://'
+  expandable-fields:
+    - field-name: metadata.file
+      referenced-keys:
+        - metadata.filename
+        - metadata.filesize
+      service: model_file.proxies.current_service
+

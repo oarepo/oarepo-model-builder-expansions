@@ -1,0 +1,14 @@
+model:
+  properties:
+    metadata:
+      properties:  # to add yout own properties, remove this line and uncomment the next one
+        filename:
+          type: fulltext
+        licence:
+          type: keyword
+        filesize:
+          type: integer
+  use:
+  - invenio
+  package: model_file
+  schema-server: 'local://'
