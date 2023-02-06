@@ -4,11 +4,10 @@ set -e
 MODEL_WITH_EXPANDABLE_FIELDS="model_document"
 MODEL_REFERENCED="model_file"
 VENV=".model_venv"
-export OPENSEARCH_PORT=9400
+# export OPENSEARCH_PORT=9400
 python3 -m venv $VENV
 . $VENV/bin/activate
 pip install -U setuptools pip wheel
-#cd $(dirname $0)/..
 for MODEL in $MODEL_WITH_EXPANDABLE_FIELDS $MODEL_REFERENCED
 do
   if test -d ./tests/$MODEL; then
