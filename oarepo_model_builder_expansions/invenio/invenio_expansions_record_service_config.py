@@ -26,7 +26,7 @@ class InvenioExpansionsRecordServiceConfigBuilder(InvenioBaseClassPythonBuilder)
             expandable_field_class = getattr(
                 expandable_field,
                 "expandable_field_class",
-                "oarepo_runtime.expansions.expandable_fields.ReferencedRecordExpandableField",
+                "oarepo_runtime.services.expansions.expandable_fields.ReferencedRecordExpandableField",
             )
             expandable_fields_context.append(
                 {

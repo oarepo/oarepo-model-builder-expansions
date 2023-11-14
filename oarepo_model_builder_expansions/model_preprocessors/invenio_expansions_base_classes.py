@@ -8,5 +8,5 @@ class InvenioExpansionsBaseClassesModelPreprocessor(ModelPreprocessor):
             schema.current_model,
             "record-service-bases",
             [],
-            "oarepo_runtime.expansions.service.ExpandableFieldsServiceMixin",
+            "oarepo_runtime.services.expansions.service.ExpandableFieldsServiceMixin",
         )

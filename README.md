@@ -11,6 +11,6 @@ record to get the field values
 - `pid-field` not required, specify the field in the referencing record holding the 
 pid of the referenced record.
 - `expandable-field-class` not required, specify the class of the expandable 
-field, by default it's [oarepo_runtime.expansions.expandable_fields.ReferencedRecordExpandableField](https://github.com/oarepo/oarepo-runtime/blob/main/oarepo_runtime/expansions/expandable_fields.py)
+field, by default it's [oarepo_runtime.services.expansions.expandable_fields.ReferencedRecordExpandableField](https://github.com/oarepo/oarepo-runtime/blob/main/oarepo_runtime/expansions/expandable_fields.py)
 
 Plugin use case example is in tests.
